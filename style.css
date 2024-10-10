@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul.sub-menu li,
+.drop-down-menu {
+    background: brown;
+}
+
+.drop-down-menu>nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+.drop-down-menu nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    color: white;
+}
+
+.drop-down-menu nav ul li a:hover {
+    background: rebeccapurple;
+    color: black;
+}
+
+.drop-down-menu nav ul li {
+    border-right: 1.5px solid deepskyblue;
+    position: relative;
+}
+
+.drop-down-menu nav ul li:last-child{
+    border-right: none;
+}
+
+ul.sub-menu {
+    position: absolute;
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+ul.sub-menu li {
+    position: absolute;
+    border-bottom: 1.5px solid deepskyblue;
+}
+
+.drop-down-menu nav ul li:hover .sub-menu {
+    display: block;
+}
